@@ -1,0 +1,148 @@
+/* Python 2 Feature Demos - Stylesheet */
+
+/* Base reset and typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+/* Paragraphs and links */
+p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Index page link list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li a {
+    display: block;
+    padding: 0.6rem 1rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+li a:hover {
+    background-color: #eff6ff;
+    border-color: #93c5fd;
+    text-decoration: none;
+}
+
+/* Source code blocks */
+pre {
+    overflow-x: auto;
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+pre code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: #1e293b;
+    color: #e2e8f0;
+    display: block;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+pre:has(code) {
+    background: #1e293b;
+    padding: 0;
+}
+
+/* Output blocks */
+pre.output {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+}
+
+/* Error blocks */
+.error-block {
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-left: 4px solid #dc2626;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.error-block pre {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: transparent;
+    color: #991b1b;
+    padding: 0.5rem;
+    border-radius: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    pre {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+    }
+
+    li a {
+        padding: 0.5rem 0.75rem;
+    }
+}
