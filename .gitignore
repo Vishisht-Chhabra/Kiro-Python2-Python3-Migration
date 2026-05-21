@@ -1,0 +1,17 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Test caches
+.pytest_cache/
+.hypothesis/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
